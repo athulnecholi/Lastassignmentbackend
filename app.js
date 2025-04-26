@@ -3,6 +3,9 @@ const productModel=require('./Models/products')
 const mongoose=require('mongoose')
 const dotenv = require('dotenv');
 const cors = require('cors');
+const authRoutes = require('./routes/auth');     // <-- import auth routes
+const productRoutes = require('./routes/products'); // <-- import product routes
+
 
 dotenv.config()
 const app=express()
